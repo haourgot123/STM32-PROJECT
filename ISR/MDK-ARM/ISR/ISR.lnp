@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"isr\startup_stm32f103xb.o"
+"isr\main.o"
+"isr\stm32f1xx_it.o"
+"isr\stm32f1xx_hal_msp.o"
+"isr\stm32f1xx_hal_gpio_ex.o"
+"isr\stm32f1xx_hal_tim.o"
+"isr\stm32f1xx_hal_tim_ex.o"
+"isr\stm32f1xx_hal.o"
+"isr\stm32f1xx_hal_rcc.o"
+"isr\stm32f1xx_hal_rcc_ex.o"
+"isr\stm32f1xx_hal_gpio.o"
+"isr\stm32f1xx_hal_dma.o"
+"isr\stm32f1xx_hal_cortex.o"
+"isr\stm32f1xx_hal_pwr.o"
+"isr\stm32f1xx_hal_flash.o"
+"isr\stm32f1xx_hal_flash_ex.o"
+"isr\stm32f1xx_hal_exti.o"
+"isr\system_stm32f1xx.o"
+--strict --scatter "ISR\ISR.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "ISR.map" -o ISR\ISR.axf

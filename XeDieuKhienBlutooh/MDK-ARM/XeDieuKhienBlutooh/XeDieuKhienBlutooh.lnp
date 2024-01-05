@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"xedieukhienblutooh\startup_stm32f103xb.o"
+"xedieukhienblutooh\main.o"
+"xedieukhienblutooh\stm32f1xx_it.o"
+"xedieukhienblutooh\stm32f1xx_hal_msp.o"
+"xedieukhienblutooh\stm32f1xx_hal_gpio_ex.o"
+"xedieukhienblutooh\stm32f1xx_hal_tim.o"
+"xedieukhienblutooh\stm32f1xx_hal_tim_ex.o"
+"xedieukhienblutooh\stm32f1xx_hal.o"
+"xedieukhienblutooh\stm32f1xx_hal_rcc.o"
+"xedieukhienblutooh\stm32f1xx_hal_rcc_ex.o"
+"xedieukhienblutooh\stm32f1xx_hal_gpio.o"
+"xedieukhienblutooh\stm32f1xx_hal_dma.o"
+"xedieukhienblutooh\stm32f1xx_hal_cortex.o"
+"xedieukhienblutooh\stm32f1xx_hal_pwr.o"
+"xedieukhienblutooh\stm32f1xx_hal_flash.o"
+"xedieukhienblutooh\stm32f1xx_hal_flash_ex.o"
+"xedieukhienblutooh\stm32f1xx_hal_exti.o"
+"xedieukhienblutooh\stm32f1xx_hal_uart.o"
+"xedieukhienblutooh\system_stm32f1xx.o"
+"xedieukhienblutooh\motor.o"
+"xedieukhienblutooh\pwm.o"
+"xedieukhienblutooh\car.o"
+--strict --scatter "XeDieuKhienBlutooh\XeDieuKhienBlutooh.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "XeDieuKhienBlutooh.map" -o XeDieuKhienBlutooh\XeDieuKhienBlutooh.axf

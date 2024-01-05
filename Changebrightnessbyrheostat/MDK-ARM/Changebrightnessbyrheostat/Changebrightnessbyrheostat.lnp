@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"changebrightnessbyrheostat\startup_stm32f103xb.o"
+"changebrightnessbyrheostat\main.o"
+"changebrightnessbyrheostat\stm32f1xx_it.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_msp.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_gpio_ex.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_adc.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_adc_ex.o"
+"changebrightnessbyrheostat\stm32f1xx_hal.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_rcc.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_rcc_ex.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_gpio.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_dma.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_cortex.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_pwr.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_flash.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_flash_ex.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_exti.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_tim.o"
+"changebrightnessbyrheostat\stm32f1xx_hal_tim_ex.o"
+"changebrightnessbyrheostat\system_stm32f1xx.o"
+--strict --scatter "Changebrightnessbyrheostat\Changebrightnessbyrheostat.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Changebrightnessbyrheostat.map" -o Changebrightnessbyrheostat\Changebrightnessbyrheostat.axf

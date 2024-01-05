@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"i2cds3231\startup_stm32f103xb.o"
+"i2cds3231\main.o"
+"i2cds3231\stm32f1xx_it.o"
+"i2cds3231\stm32f1xx_hal_msp.o"
+"i2cds3231\stm32f1xx_hal_gpio_ex.o"
+"i2cds3231\stm32f1xx_hal_i2c.o"
+"i2cds3231\stm32f1xx_hal.o"
+"i2cds3231\stm32f1xx_hal_rcc.o"
+"i2cds3231\stm32f1xx_hal_rcc_ex.o"
+"i2cds3231\stm32f1xx_hal_gpio.o"
+"i2cds3231\stm32f1xx_hal_dma.o"
+"i2cds3231\stm32f1xx_hal_cortex.o"
+"i2cds3231\stm32f1xx_hal_pwr.o"
+"i2cds3231\stm32f1xx_hal_flash.o"
+"i2cds3231\stm32f1xx_hal_flash_ex.o"
+"i2cds3231\stm32f1xx_hal_exti.o"
+"i2cds3231\stm32f1xx_hal_tim.o"
+"i2cds3231\stm32f1xx_hal_tim_ex.o"
+"i2cds3231\system_stm32f1xx.o"
+"i2cds3231\rtc_ds3231.o"
+"i2cds3231\liquidcrystal_i2c.o"
+"i2cds3231\button.o"
+--strict --scatter "I2CDS3231\I2CDS3231.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "I2CDS3231.map" -o I2CDS3231\I2CDS3231.axf

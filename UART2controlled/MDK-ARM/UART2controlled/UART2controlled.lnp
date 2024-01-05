@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"uart2controlled\startup_stm32f103xb.o"
+"uart2controlled\main.o"
+"uart2controlled\stm32f1xx_it.o"
+"uart2controlled\stm32f1xx_hal_msp.o"
+"uart2controlled\stm32f1xx_hal_gpio_ex.o"
+"uart2controlled\stm32f1xx_hal_tim.o"
+"uart2controlled\stm32f1xx_hal_tim_ex.o"
+"uart2controlled\stm32f1xx_hal_uart.o"
+"uart2controlled\stm32f1xx_hal.o"
+"uart2controlled\stm32f1xx_hal_rcc.o"
+"uart2controlled\stm32f1xx_hal_rcc_ex.o"
+"uart2controlled\stm32f1xx_hal_gpio.o"
+"uart2controlled\stm32f1xx_hal_dma.o"
+"uart2controlled\stm32f1xx_hal_cortex.o"
+"uart2controlled\stm32f1xx_hal_pwr.o"
+"uart2controlled\stm32f1xx_hal_flash.o"
+"uart2controlled\stm32f1xx_hal_flash_ex.o"
+"uart2controlled\stm32f1xx_hal_exti.o"
+"uart2controlled\system_stm32f1xx.o"
+"uart2controlled\handle_cmd.o"
+"uart2controlled\led_control.o"
+--strict --scatter "UART2controlled\UART2controlled.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "UART2controlled.map" -o UART2controlled\UART2controlled.axf

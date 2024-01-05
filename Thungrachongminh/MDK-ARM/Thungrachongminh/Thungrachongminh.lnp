@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"thungrachongminh\startup_stm32f103xb.o"
+"thungrachongminh\main.o"
+"thungrachongminh\stm32f1xx_it.o"
+"thungrachongminh\stm32f1xx_hal_msp.o"
+"thungrachongminh\stm32f1xx_hal_gpio_ex.o"
+"thungrachongminh\stm32f1xx_hal_tim.o"
+"thungrachongminh\stm32f1xx_hal_tim_ex.o"
+"thungrachongminh\stm32f1xx_hal.o"
+"thungrachongminh\stm32f1xx_hal_rcc.o"
+"thungrachongminh\stm32f1xx_hal_rcc_ex.o"
+"thungrachongminh\stm32f1xx_hal_gpio.o"
+"thungrachongminh\stm32f1xx_hal_dma.o"
+"thungrachongminh\stm32f1xx_hal_cortex.o"
+"thungrachongminh\stm32f1xx_hal_pwr.o"
+"thungrachongminh\stm32f1xx_hal_flash.o"
+"thungrachongminh\stm32f1xx_hal_flash_ex.o"
+"thungrachongminh\stm32f1xx_hal_exti.o"
+"thungrachongminh\system_stm32f1xx.o"
+"thungrachongminh\servo.o"
+"thungrachongminh\hcsr04.o"
+--strict --scatter "Thungrachongminh\Thungrachongminh.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "Thungrachongminh.map" -o Thungrachongminh\Thungrachongminh.axf

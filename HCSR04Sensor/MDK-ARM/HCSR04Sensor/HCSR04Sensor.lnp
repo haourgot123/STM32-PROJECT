@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"hcsr04sensor\startup_stm32f103xb.o"
+"hcsr04sensor\main.o"
+"hcsr04sensor\stm32f1xx_it.o"
+"hcsr04sensor\stm32f1xx_hal_msp.o"
+"hcsr04sensor\stm32f1xx_hal_gpio_ex.o"
+"hcsr04sensor\stm32f1xx_hal_tim.o"
+"hcsr04sensor\stm32f1xx_hal_tim_ex.o"
+"hcsr04sensor\stm32f1xx_hal.o"
+"hcsr04sensor\stm32f1xx_hal_rcc.o"
+"hcsr04sensor\stm32f1xx_hal_rcc_ex.o"
+"hcsr04sensor\stm32f1xx_hal_gpio.o"
+"hcsr04sensor\stm32f1xx_hal_dma.o"
+"hcsr04sensor\stm32f1xx_hal_cortex.o"
+"hcsr04sensor\stm32f1xx_hal_pwr.o"
+"hcsr04sensor\stm32f1xx_hal_flash.o"
+"hcsr04sensor\stm32f1xx_hal_flash_ex.o"
+"hcsr04sensor\stm32f1xx_hal_exti.o"
+"hcsr04sensor\system_stm32f1xx.o"
+"hcsr04sensor\hcsr04.o"
+--strict --scatter "HCSR04Sensor\HCSR04Sensor.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "HCSR04Sensor.map" -o HCSR04Sensor\HCSR04Sensor.axf
